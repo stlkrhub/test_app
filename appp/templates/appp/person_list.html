@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Persons</h2>
+    <ul>
+        {% for person in object_list %}
+            <li>Имя: {{ person.first_name }} Фамилия: {{ person.last_name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
